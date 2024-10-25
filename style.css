@@ -621,3 +621,627 @@
     height: 30vh;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Hero {
+  width: 100%;
+  height: 100vh;
+  background: #373868;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-Filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1c1d53;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.join-btn {
+  color: #000;
+  text-decoration: none;
+}
+
+.text {
+  position: absolute;
+  width: 34vw;
+  height: 34vh;
+  /* background-color: red; */
+  top: 50%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+}
+
+.text h1 {
+  font-size: 4vw;
+  color: #fff;
+}
+.text h1 span {
+  color: #fcd880;
+}
+.text h2 {
+  font-size: 2vw;
+  color: #fff;
+  margin-top: 1vw;
+}
+
+.text p {
+  font-size: 1.2vw;
+  color: #fff;
+  margin-top: 1vw;
+  line-height: 1.6vw;
+}
+
+.text button {
+  margin-top: 2vw;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+  border: none;
+
+  background-color: #fcd880;
+  color: #373868;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+.text button:hover {
+  background-color: #fff;
+  color: #1c1d53;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 0 10vw;
+}
+
+.Intro {
+  width: 80vw;
+  height: 25vw;
+  margin-top: 9vw;
+  display: flex;
+}
+.introleft {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  padding: 1vw;
+}
+.introImg {
+  width: 100%;
+  height: 100%;
+  /* background: yellow; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+.introImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+.introImg img:hover {
+  transform: scale(1.1);
+}
+.introright {
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+  padding: 1vw 4vw;
+}
+.introtext {
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.introtext h1 {
+  font-size: 3.5vw;
+  color: #233040;
+}
+.introtext p {
+  font-size: 1.3vw;
+  color: #897b82;
+  line-height: 1.6vw;
+  margin-top: 1vw;
+}
+
+.Explore {
+  width: 80vw;
+  min-height: 60vw;
+  /* background: red; */
+  margin-top: 5vw;
+  padding: 1vw;
+}
+
+.exploreText {
+  height: 50%;
+  width: 50%;
+  /* background-color: blue; */
+}
+
+.exploreText h1 {
+  font-size: 3.5vw;
+  color: #233040;
+}
+.exploreText p {
+  font-size: 1.3vw;
+  color: #897b82;
+  line-height: 1.6vw;
+  margin-top: 1vw;
+}
+
+.explore-Container {
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  padding: 1vw 6vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  margin-top: 2vw;
+}
+
+.explore-Card {
+  width: 30%;
+  height: 30%;
+  /* background-color: red; */
+}
+
+.explore-Card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.explore-Card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 0.3vw;
+  width: 20vw;
+}
+
+.explore-Card img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1vw;
+  transition: transform 0.3s ease;
+}
+
+.explore-Card h2 {
+  font-size: 1.8vw;
+  color: #373868;
+  margin-bottom: 0.5vw;
+}
+
+.explore-Card p {
+  font-size: 1.2vw;
+  color: #666;
+}
+
+.explore-Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.explore-Card:hover img {
+  transform: scale(1.05);
+}
+
+.marq {
+  width: 100%;
+  margin-top: 8vw;
+  font-size: x-large;
+  display: flex;
+  font-family: monospace;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  color: #233040;
+  opacity: 0.5;
+  font-size: 4vw;
+}
+
+.Whyjoin {
+  width: 80vw;
+  height: 25vw;
+  margin-top: 9vw;
+  display: flex;
+  /* background-color: red; */
+}
+
+.WhyjoinLeft {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  padding: 1vw 4vw;
+}
+
+.WhyjoinRight {
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+  padding: 1vw;
+}
+.WhyjoinImg {
+  width: 100%;
+  height: 100%;
+  /* background: yellow; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.WhyjoinRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+
+.WhyjoinRight img:hover {
+  transform: scale(1.1);
+}
+
+.WhyjoinLeft h1 {
+  font-size: 3.9vw;
+  color: #233040;
+  font-weight: 900;
+}
+.WhyjoinLeft p {
+  font-size: 1.3vw;
+  color: #897b82;
+  /* line-height: 1.6vw; */
+  /* margin-top: 1vw; */
+}
+
+.WhyjoinLeft ul {
+  margin-top: 1vw;
+  margin-left: 2.2vw;
+}
+
+.WhyjoinLeft ul li {
+  font-size: 1.2vw;
+  color: #897b82;
+}
+.WhyjoinLeft ul li b {
+  font-weight: 900;
+  color: #233040;
+}
+
+.CoreTeam {
+  width: 80vw;
+  height: 35vw;
+  margin-top: 9vw;
+  /* background-color: red; */
+}
+
+.CoreTeamText {
+  width: 50%;
+  height: 30%;
+  /* background-color: blue; */
+}
+
+.CoreTeamText h1 {
+  font-size: 3.5vw;
+  color: #233040;
+}
+
+.CoreTeamText p {
+  font-size: 1.3vw;
+  color: #897b82;
+  line-height: 1.6vw;
+  margin-top: 1vw;
+}
+
+.CoreTeamCards {
+  width: 100%;
+  height: 70%;
+  /* backgr ound-color: green; */
+  padding: 1vw;
+  display: flex;
+  gap: 2vw;
+}
+
+.CoreTeamCard {
+  width: 30%;
+  height: 100%;
+  /* background: red; */
+}
+
+.CoreImg {
+  width: 100%;
+  height: 80%;
+  background: yellow;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.CoreImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.CoreImg img:hover {
+  transform: scale(1.03);
+}
+
+.CoreDisCription {
+  width: 100%;
+  height: 20%;
+  /* background: red; */
+}
+.CoreDisCription h2 {
+  font-size: 1.2vw;
+  color: #373868;
+  margin-top: 0.4vw;
+}
+.CoreDisCription p {
+  margin-top: 0.3vw;
+  font-size: 1.2vw;
+  color: blue;
+  cursor: pointer;
+}
+
+
+.CoreDisCription a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6;
+  font-size: 1.2vw;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #efefef;
+  margin-top: 1vw;
+}
+
+.footer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .Hero {
+    height: 100vh;
+  }
+
+  .image{
+    height: 100vh;
+  }
+
+  .text {
+    width: 80vw;
+    height: auto;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 3vw;
+  }
+
+  .text h1 {
+    font-size: 16vw;
+  }
+
+  .text h2 {
+    font-size: 8vw;
+    margin-top: 2vw;
+  }
+
+  .text p {
+    font-size: 5vw;
+    line-height: 6vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+
+  .text button {
+    padding: 5vw 8vw;
+    font-size: 5vw;
+  }
+  .overlay-Filter {
+    opacity: 0.85;
+  }
+  .page {
+    padding: 0 2vw;
+  }
+
+  .Intro {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 10vw;
+  }
+
+  .introleft,
+  .introright {
+    width: 100%;
+    height: auto;
+  }
+
+  .introtext h1 {
+    font-size: 12vw;
+    font-weight: 900;
+    /* width: 50%; */
+    margin-top: 2vw;
+  }
+
+  .introtext p {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+  .introtext p:nth-child(2) {
+    margin-top: 10vw;
+  }
+
+  .Explore {
+    width: 100%;
+    padding: 2vw;
+    /* background-color: #000; */
+  }
+
+  .exploreText {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 4vw;
+  }
+
+  .explore-Container {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-bottom: -10vw;
+  }
+  .marq{
+    /* margin-top: 10vw; */
+    font-size: 9vw;
+    margin-bottom: 10vw;
+  }
+
+  .explore-Card h2 {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .explore-Card p {
+    font-size: 4vw;
+    line-height: 5vw;
+  }
+  .Whyjoin {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 5vw;
+  }
+
+  .WhyjoinLeft,
+  .WhyjoinRight {
+    width: 100%;
+    height: auto;
+  }
+
+  .WhyjoinLeft h1 {
+    font-size: 12vw;
+  }
+
+  .WhyjoinLeft p{
+    font-size: 5vw;
+    margin-bottom: 2vw;
+  }
+
+  .WhyjoinLeft ul li{
+    font-size: 4vw;
+    margin-left: 1vw;
+    margin-top: 2vw;
+  }
+
+  .exploreText h1 {
+    font-size: 13vw;
+    width: 80%;
+  }
+
+  .exploreText p {
+    font-size: 5vw;
+    line-height: 6vw;
+  }
+
+  .explore-Container {
+    flex-direction: column;
+    
+  }
+
+  .explore-Card {
+    width: 100%;
+    margin-bottom: 3vw;
+    height: 80vw;
+  }
+
+  .explore-Card img {
+    height: 60vw;
+  }
+
+  .CoreTeam {
+    width: 100%;
+    height: auto;
+  }
+  .CoreTeamText h1 {
+    font-size: 12vw;
+    width: 100%;
+  }
+
+  .CoreTeamText {
+    width: 100%;
+  }
+
+  .CoreTeamText p {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    line-height: 6vw;
+  }
+
+  .CoreTeamCards {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .CoreTeamCard {
+    width: 90%;
+    height: auto;
+  }
+
+  .CoreImg {
+    height: 50vw;
+  }
+
+  .CoreDisCription h2 {
+    font-size: 4vw;
+    text-align: center;
+  }
+  
+  .CoreDisCription p {
+    font-size: 3vw;
+  }
+  
+  .CoreDisCription a {
+    text-align: center;
+    margin-left: 45%;
+    font-size: 4.7vw;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+  }
+
+  .footer {
+    height: 30vh;
+  }
+}

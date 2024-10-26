@@ -36,6 +36,7 @@ function wrapTextInSpans(sectionClass) {
 
 wrapTextInSpans(".Intro");
 wrapTextInSpans(".Explore");
+wrapTextInSpans(".Whyjoin");
 
 // GSAP animation 
 gsap.to(".Intro p span, .Explore p span", {
@@ -77,7 +78,7 @@ gsap.utils.toArray('.page > div').forEach((section) => {
 
 gsap.utils.toArray('.CoreTeamCard').forEach((card, i) => {
   gsap.from(card, {
-    x: -50,
+    x: -150,
     // opacity: 0,
     duration: 1.2,
     delay: i * 0.1,

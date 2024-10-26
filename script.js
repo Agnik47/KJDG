@@ -76,19 +76,19 @@ gsap.utils.toArray('.page > div').forEach((section) => {
 
 
 
-gsap.utils.toArray('.CoreTeamCard').forEach((card, i) => {
-  gsap.from(card, {
-    x: -150,
-    // opacity: 0,
-    duration: 1.2,
-    delay: i * 0.1,
-    scrollTrigger: {
-      trigger: card,
-      scroller: scrollContainer,
-      start: "top 80%",
-      end: "bottom 40%",
-      scrub: true,
-      // markers: true,
-    },
-  });
-});
+// gsap.utils.toArray('.CoreTeamCard').forEach((card, i) => {
+//   gsap.from(card, {
+//     x: -150,
+//     // opacity: 0,
+//     duration: 1.2,
+//     delay: i * 0.1,
+//     scrollTrigger: {
+//       trigger: card,
+//       scroller: scrollContainer,
+//       start: "top 70%",
+//       end: "bottom 30%",
+//       scrub: true,
+//       markers: true,
+//     },
+//   });
+// });

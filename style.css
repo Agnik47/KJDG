@@ -608,6 +608,8 @@
   .CoreTeam {
     width: 100%;
     height: auto;
+    padding: 2vw;
+    /* padding: 6vw; */
   }
   .CoreTeamText h1 {
     font-size: 12vw;
@@ -627,6 +629,9 @@
   .CoreTeamCards {
     flex-direction: column;
     gap: 3vw;
+    /* background-color: yellow; */
+    padding-left: 7vw;
+
   }
 
   .CoreTeamCard {

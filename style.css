@@ -174,12 +174,12 @@
 .explore-Container {
   width: 100%;
   height: 50vw;
-  /* background-color: tomato; */
   padding: 1vw 6vw;
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
   margin-top: 2vw;
+  /* background-color: red; */
 }
 
 .explore-Card {
@@ -291,26 +291,13 @@
   font-size: 1vw;
   color: #897b82;
 }
-.marq {
-  width: 100%;
-  margin-top: 8vw;
-  font-size: x-large;
-  display: flex;
-  font-family: monospace;
-  justify-content: center;
-  align-items: center;
-  font-weight: 900;
-  color: #233040;
-  opacity: 0.5;
-  font-size: 4vw;
-}
 
 .Whyjoin {
   width: 80vw;
-  height: 25vw;
+  height: 35vw;
   margin-top: 9vw;
   display: flex;
-  /* background-color: red; */
+  /* background-color: red;. */
 }
 
 .WhyjoinLeft {
@@ -329,7 +316,6 @@
 .WhyjoinImg {
   width: 100%;
   height: 100%;
-  /* background: yellow; */
   border-radius: 20px;
   overflow: hidden;
 }
@@ -353,8 +339,6 @@
 .WhyjoinLeft p {
   font-size: 1.3vw;
   color: #897b82;
-  /* line-height: 1.6vw; */
-  /* margin-top: 1vw; */
 }
 
 .WhyjoinLeft ul {
@@ -370,6 +354,76 @@
   font-weight: 900;
   color: #233040;
 }
+
+.Media {
+  width: 80vw;
+  height: 25vw;
+  margin-top: 9vw;
+  background-color: #1c1d53;
+  border-radius: 30px;
+  padding: 0vw 0vw;
+  overflow: hidden;
+  display: flex;
+
+}
+
+.MediaLeft {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.ImgFilter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, #1c1d53, transparent);
+}
+
+.MediaLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MediaRight {
+  width: 60%;
+  height: 100%;
+  /* background-color: red; */
+  padding: 2vw 3vw;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MediaRight h1 {
+  font-size: 3.5vw;
+  color: #fff;
+}
+
+.MediaRight p {
+  font-size: 1.1vw;
+  color: #fff;
+}
+.MediaRight h5 {
+  font-size: 1.2vw;
+  color: #fff;
+}
+.MediaRight ul {
+  margin-left: 2.2vw;
+}
+.MediaRight ul li {
+  font-size: 1.2vw;
+  color: #fff;
+  margin-top: 0.6vw;
+}
+
+
+
+
 
 .CoreTeam {
   width: 80vw;
@@ -399,7 +453,7 @@
 .CoreTeamCards {
   width: 100%;
   height: 70%;
-  /* backgr ound-color: green; */
+  /* background-color: green; */
   padding: 1vw;
   display: flex;
   gap: 2vw;
@@ -560,7 +614,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    margin-bottom: -10vw;
+    /* margin-bottom: -10vw; */
   }
   .marq {
     /* margin-top: 10vw; */
@@ -755,19 +809,6 @@
   transform: scale(1.1); /* Scale effect on hover */
   color: #61dafb; /* Change color on hover */
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .social-media {
-    padding: 15px; /* Adjust padding on smaller screens */
-  }
-
-  .social-media a {
-    font-size: 20px; /* Slightly smaller icons */
-    margin: 0 10px; /* Adjust space between icons */
-  }
-}
-
 .marquee-container {
   overflow: hidden; /* Hide overflow */
   white-space: nowrap; /* Prevent line breaks */
@@ -781,6 +822,7 @@
 
 .marquee {
   display: inline-block;
+  margin-top: 1vw;
   animation: marquee 35s linear infinite; /* Animation for scrolling */
 }
 

@@ -192,12 +192,10 @@
   transition: all 0.6s ease;
   cursor: pointer;
   text-decoration: none;
-  color: #000;  
-  
+  color: #000;
 }
 .explore-Card:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-
 }
 
 .explore-Card-Img {
@@ -217,12 +215,11 @@
   height: 50%;
   /* background-color: #95919149; */
   padding: 0 1.5vw;
-} 
+}
 .explore-Card-DIS-Top {
   width: 100%;
   height: 55%;
   /* background-color: orange; */
-  
 }
 .explore-Card-DIS-Top .TIMER {
   width: 100%;
@@ -282,8 +279,8 @@
 .explore-Card-DIS-Bot-left {
   width: 80%;
   height: 100%;
-  padding:  1vw;
-  
+  padding: 1vw;
+
   /* background-color: blue; */
 }
 .explore-Card-DIS-Bot-left h2 {
@@ -293,7 +290,6 @@
 .explore-Card-DIS-Bot-left p {
   font-size: 1vw;
   color: #897b82;
-
 }
 .marq {
   width: 100%;
@@ -549,11 +545,11 @@
     /* background-color: #000; */
     margin-bottom: 5vw;
   }
-  
-.explore-Card{
-  text-decoration: none;
-  color: #000;
-}
+
+  .explore-Card {
+    text-decoration: none;
+    color: #000;
+  }
   .exploreText {
     width: 100%;
     text-align: left;
@@ -640,7 +636,6 @@
     gap: 3vw;
     /* background-color: yellow; */
     padding-left: 9vw;
-
   }
 
   .CoreTeamCard {
@@ -714,7 +709,7 @@
 
   .explore-Card-DIS-Bot {
     border-top: 1px solid #deddf1;
-    margin-top: -4vw; 
+    margin-top: -4vw;
   }
 
   .explore-Card-DIS-Bot .Image {
@@ -739,46 +734,45 @@
   }
 }
 
-
 /* Social Media Icons */
 .social-media {
-  display: flex;                  /* Use flexbox for alignment */
-  justify-content: center;        /* Center align the icons */
-  align-items: center;            /* Center vertically */
-  background-color: #282c34;     /* Background color for the footer */
-  padding: 20px;                 /* Padding around the icons */
-  position: relative;             /* To position any additional elements if needed */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center align the icons */
+  align-items: center; /* Center vertically */
+  background-color: #282c34; /* Background color for the footer */
+  padding: 20px; /* Padding around the icons */
+  position: relative; /* To position any additional elements if needed */
 }
 
 .social-media a {
-  color: #ffffff;                /* Icon color */
-  font-size: 24px;               /* Icon size */
-  margin: 0 15px;                /* Space between icons */
-  transition: transform 0.2s;    /* Smooth hover effect */
+  color: #ffffff; /* Icon color */
+  font-size: 24px; /* Icon size */
+  margin: 0 15px; /* Space between icons */
+  transition: transform 0.2s; /* Smooth hover effect */
 }
 
 .social-media a:hover {
-  transform: scale(1.1);         /* Scale effect on hover */
-  color: #61dafb;                /* Change color on hover */
+  transform: scale(1.1); /* Scale effect on hover */
+  color: #61dafb; /* Change color on hover */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .social-media {
-    padding: 15px;               /* Adjust padding on smaller screens */
+    padding: 15px; /* Adjust padding on smaller screens */
   }
-  
+
   .social-media a {
-    font-size: 20px;             /* Slightly smaller icons */
-    margin: 0 10px;              /* Adjust space between icons */
+    font-size: 20px; /* Slightly smaller icons */
+    margin: 0 10px; /* Adjust space between icons */
   }
 }
 
 .marquee-container {
-  overflow: hidden;                  /* Hide overflow */
-  white-space: nowrap;               /* Prevent line breaks */
-  width: 100%;                       /* Full width of the container */
-  background-color: #fff;        /* Optional: Background color */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 100%; /* Full width of the container */
+  background-color: #fff; /* Optional: Background color */
   height: 19vh;
   display: flex;
   align-items: center;
@@ -786,26 +780,23 @@
 }
 
 .marquee {
-  display: inline-block;             /* Allow the content to flow in a line */
-  animation: marquee 15s linear infinite; /* Animation for scrolling */
+  display: inline-block;
+  animation: marquee 35s linear infinite; /* Animation for scrolling */
 }
 
 .marquee p {
-  font-size: 5vw;                   /* Font size relative to viewport width */
-  font-weight: 900;                 /* Bold font */
-  opacity: 0.5;                     /* Opacity of the text */
-  margin: 0;                        /* Remove default margin */
+  font-size: 5vw;
+  font-weight: 900;
+  opacity: 0.3; /* Opacity of the text */
+  margin: 0; /* Remove default margin */
 }
 
 /* Ensuring that there are two copies of the text to create a seamless effect */
 @keyframes marquee {
   0% {
-      transform: translateX(0);     
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-50%);   
+    transform: translateX(-50%);
   }
 }
-
-
-

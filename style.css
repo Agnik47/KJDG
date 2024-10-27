@@ -180,6 +180,7 @@
   gap: 2vw;
   margin-top: 2vw;
   /* background-color: red; */
+  /* background-color: red; */
 }
 
 .explore-Card {
@@ -192,6 +193,7 @@
   transition: all 0.6s ease;
   cursor: pointer;
   text-decoration: none;
+  color: #000;
   color: #000;
 }
 .explore-Card:hover {
@@ -215,6 +217,7 @@
   height: 50%;
   /* background-color: #95919149; */
   padding: 0 1.5vw;
+}
 }
 .explore-Card-DIS-Top {
   width: 100%;
@@ -281,6 +284,8 @@
   height: 100%;
   padding: 1vw;
 
+  padding: 1vw;
+
   /* background-color: blue; */
 }
 .explore-Card-DIS-Bot-left h2 {
@@ -295,8 +300,10 @@
 .Whyjoin {
   width: 80vw;
   height: 35vw;
+  height: 35vw;
   margin-top: 9vw;
   display: flex;
+  /* background-color: red;. */
   /* background-color: red;. */
 }
 
@@ -364,6 +371,7 @@
   padding: 0vw 0vw;
   overflow: hidden;
   display: flex;
+
 }
 
 .MediaLeft {
@@ -419,6 +427,10 @@
   color: #fff;
   margin-top: 0.6vw;
 }
+
+
+
+
 
 .CoreTeam {
   width: 80vw;

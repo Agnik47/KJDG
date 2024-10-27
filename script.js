@@ -30,13 +30,13 @@ locoScroll.on("scroll", ScrollTrigger.update);
 
 // Function to wrap each character of <p> tags within specified sections in <span> tags
 function wrapTextInSpans(sectionClass) {
-  document.querySelectorAll(`${sectionClass} p`).forEach((paragraph) => {
+  document.querySelectorAll(${sectionClass} p).forEach((paragraph) => {
     let clutter = "";
     const splitText = paragraph.textContent.split("");
 
     // Wrap each character in a <span>
     splitText.forEach((char) => {
-      clutter += `<span>${char}</span>`;
+      clutter += <span>${char}</span>;
     });
     paragraph.innerHTML = clutter;
   });

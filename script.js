@@ -36,7 +36,7 @@ function wrapTextInSpans(sectionClass) {
 
     // Wrap each character in a <span>
     splitText.forEach((char) => {
-      clutter += <span>${char}</span>;
+      clutter += `<span>${char}</span>`;
     });
     paragraph.innerHTML = clutter;
   });

@@ -15,7 +15,12 @@ ScrollTrigger.scrollerProxy(scrollContainer, {
       : locoScroll.scroll.instance.scroll.y;
   },
   getBoundingClientRect() {
-    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
   },
   pinType: scrollContainer.style.transform ? "transform" : "fixed",
 });
@@ -56,7 +61,7 @@ gsap.to(".Intro p span, .Explore p span", {
 });
 
 // GSAP animation for section appearance
-gsap.utils.toArray('.page > div').forEach((section) => {
+gsap.utils.toArray(".page > div").forEach((section) => {
   gsap.from(section, {
     opacity: 0,
     y: 50,
@@ -81,9 +86,12 @@ window.addEventListener("resize", () => {
   ScrollTrigger.refresh();
 });
 
-
-window.addEventListener('wheel', (event) => {
-  if (event.ctrlKey) {
-    event.preventDefault();
-  }
-}, { passive: false });
+window.addEventListener(
+  "wheel",
+  (event) => {
+    if (event.ctrlKey) {
+      event.preventDefault();
+    }
+  },
+  { passive: false }
+);

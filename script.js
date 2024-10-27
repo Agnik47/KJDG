@@ -4,7 +4,10 @@ const locoScroll = new LocomotiveScroll({
   smooth: true,
 });
 
+// Register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
+
+// Setup scroller proxy
 ScrollTrigger.scrollerProxy(scrollContainer, {
   scrollTop(value) {
     return arguments.length
@@ -38,25 +41,21 @@ wrapTextInSpans(".Intro");
 wrapTextInSpans(".Explore");
 wrapTextInSpans(".Whyjoin");
 
-// GSAP animation 
+// GSAP animation for text color change
 gsap.to(".Intro p span, .Explore p span", {
   color: "#233040", // Target color for animation
   stagger: 0.05,
   scrollTrigger: {
     trigger: ".Intro",
-    scroller: scrollContainer, 
+    scroller: scrollContainer,
     start: "top 80%",
     end: "bottom 20%",
     scrub: 1,
-    // markers: true, 
+    // markers: true,
   },
 });
 
-// Refresh ScrollTrigger after Locomotive has set everything up
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-ScrollTrigger.refresh();
-
-
+// GSAP animation for section appearance
 gsap.utils.toArray('.page > div').forEach((section) => {
   gsap.from(section, {
     opacity: 0,
@@ -72,23 +71,19 @@ gsap.utils.toArray('.page > div').forEach((section) => {
   });
 });
 
+// Refresh ScrollTrigger after Locomotive has set everything up
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+ScrollTrigger.refresh();
+
+// Update Locomotive Scroll and ScrollTrigger on window resize
+window.addEventListener("resize", () => {
+  locoScroll.update();
+  ScrollTrigger.refresh();
+});
 
 
-
-
-// gsap.utils.toArray('.CoreTeamCard').forEach((card, i) => {
-//   gsap.from(card, {
-//     x: -150,
-//     // opacity: 0,
-//     duration: 1.2,
-//     delay: i * 0.1,
-//     scrollTrigger: {
-//       trigger: card,
-//       scroller: scrollContainer,
-//       start: "top 70%",
-//       end: "bottom 30%",
-//       scrub: true,
-//       markers: true,
-//     },
-//   });
-// });
+window.addEventListener('wheel', (event) => {
+  if (event.ctrlKey) {
+    event.preventDefault();
+  }
+}, { passive: false });
